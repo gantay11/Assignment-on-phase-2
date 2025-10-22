@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white flex items-center justify-center min-h-screen px-4">
+
+  <div class="w-full max-w-3xl bg-black p-6 rounded-lg shadow-lg">
+    <!-- Back Arrow -->
+    <div class="text-3xl text-white mb-4 cursor-pointer">&#10094;</div>
+
+    <!-- Header -->
+    <h2 class="text-2xl font-semibold text-cyan-400 text-center bg-gray-900 px-6 py-2 rounded-full w-fit mx-auto mb-8">
+      Contact us
+    </h2>
+
+    <!-- Contact Form -->
+    <form class="space-y-6">
+      <!-- Row 1 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-2 text-lg">Name :</label>
+          <input type="text" placeholder="Enter your name"
+            class="w-full bg-gray-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </div>
+        <div>
+          <label class="block mb-2 text-lg">CID number :</label>
+          <input type="text" placeholder="Enter your CID number"
+            class="w-full bg-gray-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-2 text-lg">Email :</label>
+          <input type="email" placeholder="Enter your email"
+            class="w-full bg-gray-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </div>
+        <div>
+          <label class="block mb-2 text-lg">Phone NO :</label>
+          <input type="text" placeholder="Enter your phone number"
+            class="w-full bg-gray-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div>
+        <label class="block mb-2 text-lg">Brief description about yourself</label>
+        <textarea rows="4" placeholder="Write something about yourself..."
+          class="w-full bg-gray-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex justify-center">
+        <button type="submit"
+          class="bg-cyan-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-cyan-500 transition">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
