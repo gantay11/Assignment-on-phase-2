@@ -1,31 +1,37 @@
-<!-- ====== MY PROJECT SECTION ====== -->
-<section id="projects" class="min-h-screen bg-black flex flex-col items-center justify-center py-10 text-white">
-  <!-- Back Arrow -->
-  <div class="absolute left-5 top-[320%] transform -translate-y-1/2">
-    <button class="text-white text-3xl hover:text-cyan-400 transition duration-300">
-      &lt;
-    </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+ <!-- Optional Left Arrow (visible SVG + link to coverpage with history.back fallback) -->
+    <a href="coverpage.html" aria-label="Back" class="absolute top-4 left-4 transform -translate-y-1/2 text-white cursor-pointer hover:text-cyan-400 z-20 bg-gray-800/60 rounded-full p-2" onclick="event.preventDefault(); if (history.length>1) history.back(); else window.location.href='coverpage.html';">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 19l-7-7 7-7"/></svg>
+    </a><div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-3xl text-white cursor-pointer hover:text-cyan-400">
   </div>
 
-  <!-- Section Title -->
-  <h2 class="text-xl md:text-2xl font-semibold mb-10 bg-cyan-400 text-black px-6 py-1 rounded-full">
-    My project
-  </h2>
+  <div class="bg-gray-900 rounded-2xl p-6 md:p-10 shadow-lg max-w-5xl w-[95%]">
+    <!-- Title -->
+    <div class="text-center mb-8">
+      <span class="bg-cyan-400 text-black px-6 py-2 rounded-full text-xl font-semibold font-[cursive]">
+        My project
+      </span>
+    </div>
 
-  <!-- Project Container -->
-  <div class="bg-gray-800 p-6 rounded-2xl w-[90%] md:w-[80%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <!-- Image 1 -->
-    <img src="project1.jpg" alt="Project 1" class="rounded-lg shadow-lg">
-    <!-- Image 2 -->
-    <img src="project2.jpg" alt="Project 2" class="rounded-lg shadow-lg">
-    <!-- Image 3 -->
-    <img src="project3.jpg" alt="Project 3" class="rounded-lg shadow-lg">
-    <!-- Image 4 -->
-    <img src="project4.jpg" alt="Project 4" class="rounded-lg shadow-lg">
-    <!-- Image 5 -->
-    <img src="project5.jpg" alt="Project 5" class="rounded-lg shadow-lg">
-    <!-- Image 6 -->
-    <img src="project6.jpg" alt="Project 6" class="rounded-lg shadow-lg">
+    <!-- Image Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="pro1.png" alt="Project 1" class="rounded-lg w-full h-48 object-cover">
+      <img src="pro2..png" alt="Project 2" class="rounded-lg w-full h-48 object-cover">
+      <img src="pro3.png" alt="Project 3" class="rounded-lg w-full h-48 object-cover">
+      <img src="pro4.png" alt="Project 4" class="rounded-lg w-full h-48 object-cover">
+      <img src="pro5.png" alt="Project 5" class="rounded-lg w-full h-48 object-cover">
+      <img src="pro6.png" alt="Project 6" class="rounded-lg w-full h-48 object-cover">
+    </div>
   </div>
-</section>
+
+</body>
+</html>
 

@@ -3,38 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me Section</title>
+  <title>About Me | Sanskar Gurung</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white flex items-center justify-center min-h-screen">
+<body class="bg-black text-white font-sans">
+  <a href="coverpage.html" aria-label="Back" class="absolute left-4 top-6 text-white text-2xl font-bold bg-gray-800/60 rounded-full p-2 shadow hover:bg-gray-700 transition z-20" onclick="event.preventDefault(); if (history.length>1) history.back(); else window.location.href='coverpage.html';">&lt;</a>
 
-  <div class="flex items-center justify-center gap-10 px-6">
-    <!-- Left Arrow -->
-    <button class="text-white text-3xl">&#10094;</button>
+  <!-- About Section -->
+  <section class="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16 gap-10 md:gap-20">
 
-    <!-- Profile Image -->
-    <div class="relative">
-      <div class="w-48 h-48 rounded-full border-4 border-cyan-400 flex items-center justify-center overflow-hidden">
-        <img src="your-image.png" alt="Profile" class="object-cover w-full h-full">
+    <!-- Left Image -->
+    <div class="relative flex justify-center">
+      <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-4 border-cyan-400 flex items-center justify-center shadow-lg">
+        <img src="12345.png"  class="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover">
       </div>
     </div>
 
-    <!-- Text Section -->
-    <div class="max-w-md">
-      <h2 class="text-xl font-semibold text-blue-500 mb-3">About me</h2>
-      <p class="text-gray-200 leading-relaxed mb-6">
-        “Hi, I’m a first-year Software Engineering student. I chose this field because I love technology 
-        and want to learn how to design and build software. Right now, I’m studying programming basics, 
-        computer systems, and mathematics. My goal is to become skilled at coding and problem solving so 
-        I can work on real-world projects in the future.”
+    <!-- Right Text -->
+    <div class="max-w-md text-center md:text-left">
+      <h2 class="text-lg text-cyan-400 font-semibold mb-3">About me</h2>
+      <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-8">
+        “Hi, I’m a first-year Software Engineering student. I chose this field because I love technology and want to learn how to design and build software.
+        Right now, I’m studying programming basics, computer systems, and mathematics. My goal is to become skilled at coding and problem solving so I can work on real-world projects in the future.”
       </p>
 
-      <!-- Button -->
-      <button class="bg-cyan-400 text-black px-4 py-1 rounded-full text-sm font-semibold hover:bg-cyan-500 transition">
-        Read more
-      </button>
+      <!-- Read More Button -->
+      <div class="mt-10">
+        <a href="#" class="inline-block px-5 py-2 bg-cyan-400 text-black font-semibold rounded-full text-sm hover:bg-cyan-300 transition">
+          <span class="hover:color-purple-300"></span>
+          Read more
+        </a>
+      </div>
     </div>
+  </section>
+ <!-- Optional Left Arrow -->
+  <div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-3xl text-white cursor-pointer hover:text-cyan-400"></div>
+    <i class="fas fa-chevron-left"></i>
   </div>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

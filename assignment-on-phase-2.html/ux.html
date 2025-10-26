@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX/UI Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans">
+ <!-- Optional Left Arrow (visible SVG + link to coverpage with history.back fallback) -->
+    <a href="coverpage.html" aria-label="Back" class="absolute top-4 left-4 transform -translate-y-1/2 text-white cursor-pointer hover:text-cyan-400 z-20 bg-gray-800/60 rounded-full p-2" onclick="event.preventDefault(); if (history.length>1) history.back(); else window.location.href='coverpage.html';">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 19l-7-7 7-7"/></svg>
+    </a><div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-3xl text-white cursor-pointer hover:text-cyan-400">
+  </div>
+
+  <!-- Section Container -->
+  <section class="max-w-5xl mx-auto p-6 md:p-10 bg-white text-black">
+
+    <!-- Top Card -->
+    <div class="border rounded-2xl shadow-sm p-6 md:flex md:items-center md:justify-between gap-6">
+      <div class="flex-1">
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+          <i class="fas fa-chevron-left text-xl cursor-pointer hover:text-gray-600"></i>
+          <h1 class="text-lg font-semibold">UX/UI Design</h1>
+          Get started in the fast-growing field of user experience (UX) design with a professional UX Certificate developed by Google. 
+          Learn the foundations of UX design, including empathizing with users, building wireframes and prototypes, and conducting research to test your designs — 
+          and discover how to effectively utilize AI in UX design.
+        </p>
+      </div>
+      <div class="mt-4 md:mt-0 flex-shrink-0">
+        <img src="ux.png" alt="UX Design" class="rounded-xl w-full md:w-64 object-cover">
+      </div>
+    </div>
+
+    <!-- Title Below -->
+    <div class="text-center my-8">
+      <p class="text-gray-800 text-sm md:text-base">
+        Get on the fast track to high paying jobs with top employers
+      </p>
+    </div>
+
+    <!-- Highlight Box -->
+    <div class="flex justify-center mb-8">
+      <div class="bg-white border-2 border-gray-300 px-6 py-3 rounded-full shadow-md font-medium text-sm md:text-base">
+        Qualify for high-paying jobs in UX design
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="md:flex md:items-center md:justify-between gap-8">
+      <!-- Left Text -->
+       <div class="border rounded-2xl shadow-sm p-6 md:flex md:items-center md:justify-between gap-6">
+      <div class="flex-1"></div>
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+          UX designers make technology easier and more enjoyable for people to use. 
+          They design products and tools so that they are more useful and accessible for users.
+        </p>
+        <div class="text-center mt-10">
+      <button class="bg-gray-200 hover:bg-gray-300 text-black font-medium px-6 py-2 rounded-full text-sm transition">
+        Start course
+      </button>
+    </div>
+
+      </div>
+
+      <!-- Right Buttons -->
+      <div class="md:w-1/2 grid grid-cols-2 gap-3">
+        <button class="border-2 border-gray-300 rounded-xl py-2 px-4 text-sm hover:bg-gray-100">UX designer</button>
+        <button class="border-2 border-gray-300 rounded-xl py-2 px-4 text-sm hover:bg-gray-100">UI designer</button>
+        <button class="border-2 border-gray-300 rounded-xl py-2 px-4 text-sm hover:bg-gray-100">Visual designer</button>
+        <button class="border-2 border-gray-300 rounded-xl py-2 px-4 text-sm hover:bg-gray-100">Product designer</button>
+        <button class="border-2 border-gray-300 rounded-xl py-2 px-4 text-sm col-span-2 hover:bg-gray-100">Interaction designer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

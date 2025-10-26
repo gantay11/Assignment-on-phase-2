@@ -9,8 +9,11 @@
 <body class="bg-black text-white flex items-center justify-center min-h-screen px-4">
 
   <div class="w-full max-w-3xl bg-black p-6 rounded-lg shadow-lg">
-    <!-- Back Arrow -->
-    <div class="text-3xl text-white mb-4 cursor-pointer">&#10094;</div>
+    <!-- Optional Left Arrow (visible SVG + link to coverpage with history.back fallback) -->
+    <a href="coverpage.html" aria-label="Back" class="absolute top-4 elft-4 transform -translate-y-1/2 text-white cursor-pointer hover:text-cyan-400 z-20 bg-gray-800/60 rounded-full p-2" onclick="event.preventDefault(); if (history.length>1) history.back(); else window.location.href='coverpage.html';">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 19l-7-7 7-7"/></svg>
+    </a><div class="absolute top-1/2 left-4 transform -translate-y-1/2 text-3xl text-white cursor-pointer hover:text-cyan-400">
+  </div>
 
     <!-- Header -->
     <h2 class="text-2xl font-semibold text-cyan-400 text-center bg-gray-900 px-6 py-2 rounded-full w-fit mx-auto mb-8">
